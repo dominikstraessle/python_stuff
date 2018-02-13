@@ -5,7 +5,7 @@
 #: Version : 1.0
 #: Description : Use PIP behind a Proxy
 #: Options : None
-#: Prerequisites : Replace "module", https- and http proxy server
+#: Prerequisites : Replace "module", https- and http proxy server (remove the ")
 #: Warning : 
 
 export http_proxy="http://user:pwd@server:port"
