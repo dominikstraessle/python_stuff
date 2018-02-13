@@ -11,3 +11,5 @@
 export http_proxy="http://user:pwd@server:port"
 export https_proxy="https://user:pwd@server:port"
 pip install --index-url=https://pypi.python.org/simple/ --trusted-host pypi.python.org "module"
+export http_proxy=
+export https_proxy=
