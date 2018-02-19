@@ -19,5 +19,5 @@ if [[ -n $3 ]]; then
   export https_proxy=
   echo "pip finished"
 else
-  echo "argument error"
+  echo "argument error: modulname missing"
 fi
