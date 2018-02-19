@@ -4,12 +4,14 @@
 #: Author : Dominik Strässle
 #: Version : 1.0
 #: Description : Use PIP behind a Proxy
-#: Options : None
-#: Prerequisites : Replace "module", https- and http proxy server (remove the ")
-#: Warning : 
+#: Parameters : 1. http_proxy
+#: Parameters : 2. https_proxy
+#: Parameters : 3. module name
+#: Example : sh pip_over_proxy.sh http://user:pwd@server:port https://user:pwd@server:port flask
+#: Example : sh pip_over_proxy.sh "" https://user:pwd@server:port flask
 
-export http_proxy="http://user:pwd@server:port"
-export https_proxy="https://user:pwd@server:port"
-pip install --index-url=https://pypi.python.org/simple/ --trusted-host pypi.python.org "module"
+export http_proxy=$1
+export https_proxy=$2
+pip install --index-url=https://pypi.python.org/simple/ --trusted-host pypi.python.org $3
 export http_proxy=
 export https_proxy=
