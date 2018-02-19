@@ -10,8 +10,14 @@
 #: Example : sh pip_over_proxy.sh http://user:pwd@server:port https://user:pwd@server:port flask
 #: Example : sh pip_over_proxy.sh "" https://user:pwd@server:port flask
 
-export http_proxy=$1
-export https_proxy=$2
-pip install --index-url=https://pypi.python.org/simple/ --trusted-host pypi.python.org $3
-export http_proxy=
-export https_proxy=
+if [[ -n $3 ]]; then
+  echo "pip will start now"
+  export http_proxy=$1
+  export https_proxy=$2
+  pip install --index-url=https://pypi.python.org/simple/ --trusted-host pypi.python.org $3
+  export http_proxy=
+  export https_proxy=
+  echo "pip finished"
+else
+  echo "argument error"
+fi
