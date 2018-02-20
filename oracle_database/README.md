@@ -8,23 +8,23 @@ A Context Manager for Oracle Database access.
 
 #### cx_Oracle
 
-[cx_Oracle](https://github.com/oracle/python-cx_Oracle) - Follow the installation instructions
+* [cx_Oracle](https://github.com/oracle/python-cx_Oracle) - Follow the installation instructions
 
 ### Installing
 
-[oracle_database_connection](https://github.com/dominikstraessle/python_stuff/blob/master/oracle_database/dist/oracle_database_connection-1.0.tar.gz) - Download the modul from here
+* [oracle_database_connection](https://github.com/dominikstraessle/python_stuff/blob/master/oracle_database/dist/oracle_database_connection-1.0.tar.gz) - Download the modul from here
 
-```
+```shell
 cd /directory/where/module
 pip install oracle_database_connection-1.0.tar.gz
 ```
 
 ## Example
 
-Explain how to run the automated tests for this system
+A simple example for the usage of the ConnectionManager.
 
-###tabulate for beautiful representation
-```
+### tabulate for beautiful representation
+```shell
 pip install tabulate
 ```
 
