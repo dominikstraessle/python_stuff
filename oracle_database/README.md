@@ -12,7 +12,7 @@ A Context Manager for Oracle Database access.
 
 #### Running Oracle Database
 
-You need a running Oracle Database. The modul is tested on the version 12c.
+You need a running Oracle Database. For example 12c.
 
 ### Installing
 
