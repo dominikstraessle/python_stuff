@@ -10,6 +10,10 @@ A Context Manager for Oracle Database access.
 
 * [cx_Oracle](https://github.com/oracle/python-cx_Oracle) - Follow the installation instructions
 
+#### Running Oracle Database
+
+You need a running Oracle Database. The modul is tested on the version 12c.
+
 ### Installing
 
 * [oracle_database_connection](https://github.com/dominikstraessle/python_stuff/blob/master/oracle_database/dist/oracle_database_connection-1.0.tar.gz) - Download the modul from here
@@ -41,3 +45,6 @@ with connection.ConnectionManager(('user', 'password', 'connection_info')) as cu
 
 ```
 
+## Acknowledgments
+
+* [README.md Template](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
