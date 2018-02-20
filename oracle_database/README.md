@@ -1,6 +1,6 @@
 # Oracle Database Context Manager
 
-A Context Manager for Oracle Database access.
+A Context Manager for Oracle Database access with python.
 
 ## Getting Started
 
@@ -13,6 +13,10 @@ A Context Manager for Oracle Database access.
 #### Running Oracle Database
 
 You need a running Oracle Database. For example 12c.
+
+#### Python 3.x.x installed
+
+You need a 3.x.x version of python installed.
 
 ### Installing
 
