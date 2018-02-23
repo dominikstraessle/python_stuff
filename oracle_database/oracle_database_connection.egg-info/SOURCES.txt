@@ -1,6 +1,0 @@
-connection.py
-setup.py
-oracle_database_connection.egg-info/PKG-INFO
-oracle_database_connection.egg-info/SOURCES.txt
-oracle_database_connection.egg-info/dependency_links.txt
-oracle_database_connection.egg-info/top_level.txt
