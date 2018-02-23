@@ -33,15 +33,17 @@ A simple example for the usage of the ConnectionManager.
 
 
 ```python
-import connection
+from oracle_dbtools.oracle_dbcm import ConnectionManager, CMError
 
-with connection.ConnectionManager(('user', 'password', 'connection_info')) as cursor:
-    cursor.execute("""select id, name from schema.employees""")
-    results = cursor.fetchall()
-    for line in results:
-        print(line)
-    pass
-
+try:
+    with ConnectionManager(('user', 'password', 'connection_info')) as cursor:
+        cursor.execute("""select id, name from schema.employees""")
+        results = cursor.fetchall()
+        for line in results:
+            print(line)
+        pass
+except CMError as e:
+    print(e)
 ```
 
 ## Acknowledgments
