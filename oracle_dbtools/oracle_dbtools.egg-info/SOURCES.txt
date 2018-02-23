@@ -1,0 +1,6 @@
+setup.py
+oracle_dbtools/oracle_dbcm.py
+oracle_dbtools.egg-info/PKG-INFO
+oracle_dbtools.egg-info/SOURCES.txt
+oracle_dbtools.egg-info/dependency_links.txt
+oracle_dbtools.egg-info/top_level.txt

@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: oracle-dbtools
+Version: 1.1
+Summary: Tools for Oracle Database access.
+Home-page: https://github.com/dominikstraessle/python_stuff/tree/master/oracle_database
+Author: Dominik Strässle
+Author-email: UNKNOWN
+License: MIT
+Description: UNKNOWN
+Keywords: oracle database context manager
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Database
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.6
