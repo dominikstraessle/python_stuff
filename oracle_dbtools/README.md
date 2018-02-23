@@ -20,7 +20,7 @@ You need a 3.x.x version of python installed.
 
 ### Installing
 
-* [oracle_database_connection](https://github.com/dominikstraessle/python_stuff/blob/master/oracle_database/dist/oracle_database_connection-1.0.tar.gz) - Download the modul from here
+* [oracle_database_connection](https://github.com/dominikstraessle/python_stuff/blob/master/oracle_dbtools/dist/oracle_dbtools-1.1.tar.gz) - Download the modul from here
 
 ```shell
 cd /directory/where/module/dist
