@@ -10,6 +10,9 @@ app = Flask(__name__)
 
 def get_data() -> list:
     """Query and fetches the required data and returns them as a list."""
+    # a simple example would be:
+    # (without oracle_dbtools and oracle database)
+    # return [i for i in range(1, 100)]
     try:
         # Opening database connection with the ConnectionManager
         with ConnectionManager(('user', 'password', 'connection_info')) as cursor:
