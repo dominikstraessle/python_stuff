@@ -1,0 +1,16 @@
+{% extends 'layouts/base.html' %}
+{% block body %}
+    <section class="hero">
+        <div class="hero-body">
+            <div class="container is-fluid">
+                <div class="tile is-parent">
+                    <article class="tile is-child">
+                        {% block section %}
+
+                        {% endblock %}
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

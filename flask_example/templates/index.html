@@ -1,0 +1,23 @@
+{% extends 'layouts/section.html' %}
+{% block section %}
+    <h2 class="title">{{ title }}</h2>
+    <form method="get" action="/">
+        <div class="field">
+            <label class="label">Name</label>
+            <div class="control">
+                <input class="input" type="text" placeholder="Benutzername eingeben"
+                       name="name" value="{% if name != None: %}{{ name }}{% endif %}">
+            </div>
+        </div>
+        <div class="field">
+            <label class="label">Alter</label>
+            <div class="control">
+                <input class="input" type="number" placeholder="Passwort eingeben"
+                       name="age" value="{% if age != None: %}{{ age }}{% endif %}">
+            </div>
+        </div>
+        <div class="control">
+            <button class="button is-primary" type="submit">Senden</button>
+        </div>
+    </form>
+{% endblock %}

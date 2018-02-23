@@ -1,0 +1,19 @@
+{% extends 'layouts/section.html' %}
+{% block section %}
+<table class="table is-bordered">
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for id, nname in rows %}
+    <tr>
+        <td>{{ id }}</td>
+        <td>{{ nname }}</td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
