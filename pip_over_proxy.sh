@@ -24,3 +24,4 @@ fi
 
 #: Alternative in %appdata%/pip/pip.ini:
 #: https://stackoverflow.com/questions/9698557/how-to-use-pip-on-windows-behind-an-authenticating-proxy/37219624#37219624
+#: In virtualenv place the pip.ini here: %virtualenv%/pip.ini (https://stackoverflow.com/questions/28278207/python-cant-find-pip-ini-or-pip-conf-in-windows7)
