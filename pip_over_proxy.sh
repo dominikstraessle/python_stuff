@@ -21,3 +21,6 @@ if [[ -n $3 ]]; then
 else
   echo "argument error: modulname missing"
 fi
+
+#: Alternative in %appdata%/pip/pip.ini:
+#: https://stackoverflow.com/questions/9698557/how-to-use-pip-on-windows-behind-an-authenticating-proxy/37219624#37219624
