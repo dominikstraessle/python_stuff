@@ -47,6 +47,8 @@ except CMError as e:
 ```
 
 Example with bind variables. Should be used to avoid many different sqlid's with own execution plans on the database.
+See also:
+[Python cx_Oracle bind variables](https://stackoverflow.com/a/33882805/7130107)
 ```python
 from oracle_dbtools.oracle_dbcm import ConnectionManager, CMError
 
