@@ -46,6 +46,30 @@ except CMError as e:
     print(e)
 ```
 
+Example with bind variables. Should be used to avoid many different sqlid's with own execution plans on the database.
+```python
+from oracle_dbtools.oracle_dbcm import ConnectionManager, CMError
+
+try:
+    with ConnectionManager(('user', 'password', 'tns')) as cursor:
+        # Select with a bind variable :id
+        SQL = """select  EMPLOYEE_ID, FIRST_NAME, LAST_NAME from schema.employees where EMPLOYEE_ID = :id"""
+
+        results = []
+
+        for i in range(10, 1):
+            # 10 executions with different variables, but every select has the same sqlid and execution plan
+            cursor.execute(SQL, id=i)
+            results.append(cursor.fetchall())
+
+        for line in results:
+            # print the results
+            print(line)
+        pass
+except CMError as e:
+    print(e)
+```
+
 ## Acknowledgments
 
 * [README.md Template](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
